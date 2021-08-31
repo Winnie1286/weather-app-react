@@ -8,7 +8,7 @@ export default function Footer() {
       <p className="foot">
         Coded by Winnie Wong and is open-sourced on
         <a
-          href="https://github.com/Winnie1286/Weather-app"
+          href="https://github.com/Winnie1286/weather-app-react"
           target="_blank"
           rel="noreferrer"
         >
