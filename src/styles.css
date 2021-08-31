@@ -1,0 +1,91 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+body {
+  color: #fff;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/012/327/original/galaxy_color.jpg?1625437210");
+  background-size: cover;
+  border: 2px dotted #fff;
+  margin: 20px 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 15px;
+}
+
+h3 {
+  margin-bottom: 0;
+}
+
+p {
+  margin: 0;
+}
+ul {
+  margin: 0 0 18px 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+h6 {
+  text-decoration: underline;
+}
+.current {
+  text-align: center;
+}
+
+.nowEmoji {
+  font-size: 50px;
+}
+
+.emoji {
+  font-size: 33px;
+}
+
+.forecast {
+  text-align: center;
+}
+
+.days {
+  font-size: 13px;
+}
+
+.forecastEmoji {
+  font-size: 28px;
+}
+.weather-forecast-hr-description {
+  text-transform: capitalize;
+}
+
+.divider {
+  font-size: 16px;
+  vertical-align: text-top;
+}
+#city,
+#description {
+  text-transform: capitalize;
+}
+.weather-forecast-hour {
+  padding: 28px 0 30px 0;
+  font-size: 18px;
+  text-align: right;
+}
+
+.weather-forecast-hr-description {
+  padding: 0 0 20px 0;
+}
+
+#fahrenheitLink {
+  font-size: 15px;
+  vertical-align: text-top;
+}
+
+#celsiusLink {
+  font-size: 15px;
+  vertical-align: text-top;
+}
