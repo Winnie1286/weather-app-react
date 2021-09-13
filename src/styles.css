@@ -9,7 +9,7 @@ body {
     url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/012/327/original/galaxy_color.jpg?1625437210");
   background-size: cover;
   border: 2px dotted #fff;
-  margin: 20px 20px;
+  margin: 30px 20px;
 }
 
 h1 {
@@ -66,26 +66,27 @@ h6 {
   font-size: 16px;
   vertical-align: text-top;
 }
-#city,
-#description {
+.city,
+.description {
   text-transform: capitalize;
 }
-.weather-forecast-hour {
-  padding: 28px 0 30px 0;
+.weatherForecastHour {
+  padding: 28px 3px 30px 0;
   font-size: 18px;
   text-align: right;
 }
 
-.weather-forecast-hr-description {
-  padding: 0 0 20px 0;
+.hourlyForecast {
+  padding: 28px 0 20px 5px;
+  text-align: left;
 }
 
-#fahrenheitLink {
+.fahrenheitLink {
   font-size: 15px;
   vertical-align: text-top;
 }
 
-#celsiusLink {
+.celsiusLink {
   font-size: 15px;
   vertical-align: text-top;
 }

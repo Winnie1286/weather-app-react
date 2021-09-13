@@ -4,19 +4,15 @@ import "bootstrap/dist/css/bootstrap.css";
 import Weather from "./Weather";
 import Footer from "./Footer";
 import Heading from "./Heading";
-import Search from "./Search";
-import DayForecast from "./DayForecast";
-import HourForecast from "./HourForecast";
 
 export default function App() {
   return (
     <div className="App">
-      <Heading />
-      <Search />
-      <Weather />
-      <HourForecast />
-      <DayForecast />
-      <Footer />
+      <div className="container">
+        <Heading />
+        <Weather defaultCity="New York" />
+        <Footer />
+      </div>
     </div>
   );
 }
