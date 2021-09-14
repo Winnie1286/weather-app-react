@@ -17,15 +17,6 @@ export default function WeatherInfo(props) {
           <span className="temperature">
             <WeatherTemperature celsius={props.data.temperature} />
           </span>
-          <a href="/" className="fahrenheitLink">
-            °F
-          </a>
-          <span className="divider"> | </span>
-          <a href="/" className="celsiusLink">
-            {" "}
-            °C{" "}
-          </a>
-          <br />
           <div>
             <WeatherIcon code={props.data.icon} size={30} />
           </div>
@@ -33,13 +24,10 @@ export default function WeatherInfo(props) {
         <ul>
           <li className="text-capitalize"> {props.data.description}</li>
           <li>
-            High | Low: <span className="max-temp">90</span> |{" "}
-            <span className="min-temp">72</span>°F
+            High | Low: {Math.round(props.data.maxtemp)} |{" "}
+            {Math.round(props.data.mintemp)}°C
           </li>
-          <li>
-            Precipitation: <span className="precipitation"></span>%
-          </li>
-          <li>Wind: {props.data.wind} kilometers/hour</li>
+          <li>Wind: {props.data.wind} km/hour</li>
           <li>Humidity: {props.data.humidity} % </li>
           <li>
             Sunrise: <span className="sunrise">☀️</span>
