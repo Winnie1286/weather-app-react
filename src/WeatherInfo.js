@@ -3,18 +3,20 @@ import WeatherIcon from "./WeatherIcon";
 import WeatherTemperature from "./WeatherTemperature";
 import HourForecast from "./HourForecast";
 import DayForecast from "./DayForecast";
+import Heading from "./Heading";
 
 export default function WeatherInfo(props) {
   return (
     <div className="row WeatherInfo">
+      <Heading date={props.data.date} />
       <div className="col-6 current">
         <h1>
-          {" "}
-          <span className="city"> New York </span>{" "}
+          <span className="city"> {props.data.city} </span>
         </h1>
         <h3>
-          {" "}
-          <span className="temperature"> 74</span>
+          <span className="temperature">
+            <WeatherTemperature celsius={props.data.temperature} />
+          </span>
           <a href="/" className="fahrenheitLink">
             °F
           </a>
@@ -24,16 +26,12 @@ export default function WeatherInfo(props) {
             °C{" "}
           </a>
           <br />
-          <div className="nowEmoji">
-            {" "}
-            <img className="now-icon" src="" alt="" />
+          <div>
+            <WeatherIcon code={props.data.icon} size={30} />
           </div>
         </h3>
         <ul>
-          <li>
-            {" "}
-            <span className="description">Cloudy</span>{" "}
-          </li>
+          <li className="text-capitalize"> {props.data.description}</li>
           <li>
             High | Low: <span className="max-temp">90</span> |{" "}
             <span className="min-temp">72</span>°F
@@ -41,12 +39,8 @@ export default function WeatherInfo(props) {
           <li>
             Precipitation: <span className="precipitation"></span>%
           </li>
-          <li>
-            Wind: <span className="wind"> 5 </span> miles/hour
-          </li>
-          <li>
-            Humidity: <span className="humidity">65</span> %{" "}
-          </li>
+          <li>Wind: {props.data.wind} kilometers/hour</li>
+          <li>Humidity: {props.data.humidity} % </li>
           <li>
             Sunrise: <span className="sunrise">☀️</span>
           </li>
