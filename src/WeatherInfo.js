@@ -24,7 +24,8 @@ export default function WeatherInfo(props) {
           <li className="text-capitalize"> {props.data.description}</li>
           <li>
             High | Low: {Math.round(props.data.maxtemp)} |{" "}
-            {Math.round(props.data.mintemp)}°C
+            {Math.round(props.data.mintemp)}
+            <span className="celsius">°C </span>
           </li>
           <li>Wind: {props.data.wind} km/hour</li>
           <li>Humidity: {props.data.humidity} % </li>
