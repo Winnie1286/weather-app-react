@@ -12,6 +12,10 @@ body {
   margin: 30px 20px;
 }
 
+.searchButton {
+  margin: 5px;
+}
+
 h1 {
   text-align: center;
   margin-top: 15px;

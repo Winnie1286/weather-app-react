@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
+import DayForecast from "./DayForecast";
 import axios from "axios";
 import "./styles.css";
 
@@ -18,6 +19,7 @@ export default function Weather(props) {
       city: response.data.name,
       maxtemp: response.data.main.temp_max,
       mintemp: response.data.main.temp_min,
+      coord: response.data.coord,
       ready: true,
     });
   }
@@ -54,6 +56,7 @@ export default function Weather(props) {
           />
         </form>
         <WeatherInfo data={weatherData} />
+        <DayForecast coordinates={weatherData.coord} />
       </div>
     );
   } else {

@@ -2,7 +2,6 @@ import React from "react";
 import WeatherIcon from "./WeatherIcon";
 import WeatherTemperature from "./WeatherTemperature";
 import HourForecast from "./HourForecast";
-import DayForecast from "./DayForecast";
 import Heading from "./Heading";
 
 export default function WeatherInfo(props) {
@@ -43,7 +42,6 @@ export default function WeatherInfo(props) {
           <HourForecast />
         </h5>
       </div>
-      <DayForecast />
     </div>
   );
 }
