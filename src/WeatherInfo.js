@@ -7,10 +7,13 @@ export default function WeatherInfo(props) {
   return (
     <div className="row WeatherInfo">
       <Heading date={props.data.date} />
+      <br />
+      <br />
       <div className="col-6 current">
         <h1>
           <span className="city"> {props.data.city} </span>
         </h1>
+
         <h3>
           <span className="temperature">
             <WeatherTemperature celsius={props.data.temperature} />

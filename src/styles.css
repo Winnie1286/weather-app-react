@@ -41,6 +41,7 @@ h6 {
 }
 .current {
   text-align: center;
+  margin-top: 8px;
 }
 
 .forecastIcon {
@@ -58,10 +59,6 @@ h6 {
   font-size: 13px;
 }
 
-.weather-forecast-hr-description {
-  text-transform: capitalize;
-}
-
 .divider {
   font-size: 16px;
   vertical-align: text-top;
@@ -71,7 +68,7 @@ h6 {
   text-transform: capitalize;
 }
 .info {
-  padding: 28px 3px 30px 0;
+  padding: 28px 3px 26px 0;
   font-size: 19px;
   text-align: justify;
   line-height: 28px;
