@@ -43,14 +43,13 @@ h6 {
   text-align: center;
 }
 
-.nowEmoji {
-  font-size: 50px;
+.forecastIcon {
+  margin-right: 10px;
 }
 
-.emoji {
-  font-size: 33px;
+.forecastDay {
+  margin-right: 8px;
 }
-
 .forecast {
   text-align: center;
 }
@@ -59,9 +58,6 @@ h6 {
   font-size: 13px;
 }
 
-.forecastEmoji {
-  font-size: 28px;
-}
 .weather-forecast-hr-description {
   text-transform: capitalize;
 }
@@ -85,12 +81,13 @@ h6 {
   text-align: left;
 }
 
-.fahrenheitLink {
+.unit {
   font-size: 15px;
   vertical-align: text-top;
+  margin-left: 4px;
 }
 
-.celsiusLink {
-  font-size: 15px;
-  vertical-align: text-top;
+.celsius {
+  vertical-align: top;
+  font-size: 12px;
 }
